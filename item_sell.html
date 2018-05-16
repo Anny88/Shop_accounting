@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<!-- saved from url=(0054)http://localhost/web/shopms/profile/item/5ae564978ffa0 -->
+<html lang="ru"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<title>Продажа</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./item_sell_files/bootstrap.min.css">
+  <script src="./item_sell_files/jquery.min.js.Без названия"></script>
+  <script src="./item_sell_files/bootstrap.min.js.Без названия"></script>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+<div class="header center" id = "myHeader">
+    <a class = "head-item" href="http://localhost/web/shopms" class="btn btn-primary">Main</a>
+    <a class = "head-item" href="http://localhost/web/shopms/login" class="btn btn-primary">Login</a>
+    <a class = "head-item" href="http://localhost/web/shopms/profile/user/5adee39f1e751" class="btn btn-primary">My profile</a>
+    <a class = "head-item" href="http://localhost/web/shopms/profile/company/5ae05e509c8f6" class="btn btn-primary">My company</a> 
+    <a class = "head-item" href="http://localhost/web/shopms/company/create_item" class="btn btn-primary">Create item</a>
+</div>	
+    
+ <div class = "content center">
+    <h4 class = "cursive">Приветствуем, (Продавец 1)</h4>   
+    <h1>Item Gucci g 1001 from shop 1 </h1>
+    <p>Season winter</p>
+    <p>Price low 100</p>
+    <p>Price high 200</p>
+</div>   
+    
+
+ <div class = "content center">
+
+<form method="post" onsubmit="return confirm(&#39;Are you sure you wish to send items?&#39;)">
+    <label>Action</label>
+    
+    <script>
+    var max_opened = 0;
+    $(document).ready   (function(){
+    chose_destination();
+    });
+    function chose_destination(){
+        var select = document.getElementById('destination');
+        var destination = select.options[select.selectedIndex].value;
+        if(destination=='sell'){
+            $('#customer_info').show(500);
+            document.getElementById('cash').value = 200;
+        } else{
+            $('#customer_info').hide(500);
+            document.getElementById('cash').value = 0;
+        }
+    }
+    </script>
+    
+    <select class="form-control" onchange="chose_destination()" name="destination" id="destination"><option value="sell">Sell</option><option value="outside">Drop</option><option value="5ae2dadfd6a75">Send to a</option></select><div class="btn-group btn-group-justified"><p id="button19" class="btn btn-default">19</p><script>
+      var x19 = 0;
+      var max19 = 8;
+      $(document).ready(function(){
+            
+            $('#input19').change(function(){
+                if(document.getElementById('input19').value>max19){
+                    document.getElementById('input19').value = max19;
+                    alert('Not enough items on storage');
+                }
+                if(document.getElementById('input19').value<0){
+                    document.getElementById('input19').value = 0;
+                    alert('Cannot be negative');
+                }
+            });
+            
+          $('#button19').click(function(){
+            if(x19==0 ){
+              x19=1;
+              $('#form19').show(500);
+              document.getElementById('button19').style.background='darkgray';
+              document.getElementById('input19').value="1";
+            } else{
+              x19=0;
+              $('#form19').hide(500);
+              document.getElementById('button19').style.background='white';
+              document.getElementById('input19').value="";
+            }
+          });
+
+      });
+      </script>
+      <p id="button20" class="btn btn-default">20</p><script>
+      var x20 = 0;
+      var max20 = 9;
+      $(document).ready(function(){
+            
+            $('#input20').change(function(){
+                if(document.getElementById('input20').value>max20){
+                    document.getElementById('input20').value = max20;
+                    alert('Not enough items on storage');
+                }
+                if(document.getElementById('input20').value<0){
+                    document.getElementById('input20').value = 0;
+                    alert('Cannot be negative');
+                }
+            });
+            
+          $('#button20').click(function(){
+            if(x20==0 ){
+              x20=1;
+              $('#form20').show(500);
+              document.getElementById('button20').style.background='darkgray';
+              document.getElementById('input20').value="1";
+            } else{
+              x20=0;
+              $('#form20').hide(500);
+              document.getElementById('button20').style.background='white';
+              document.getElementById('input20').value="";
+            }
+          });
+
+      });
+      </script>
+      <p id="button21" class="btn btn-default">21</p><script>
+      var x21 = 0;
+      var max21 = 9;
+      $(document).ready(function(){
+            
+            $('#input21').change(function(){
+                if(document.getElementById('input21').value>max21){
+                    document.getElementById('input21').value = max21;
+                    alert('Not enough items on storage');
+                }
+                if(document.getElementById('input21').value<0){
+                    document.getElementById('input21').value = 0;
+                    alert('Cannot be negative');
+                }
+            });
+            
+          $('#button21').click(function(){
+            if(x21==0 ){
+              x21=1;
+              $('#form21').show(500);
+              document.getElementById('button21').style.background='darkgray';
+              document.getElementById('input21').value="1";
+            } else{
+              x21=0;
+              $('#form21').hide(500);
+              document.getElementById('button21').style.background='white';
+              document.getElementById('input21').value="";
+            }
+          });
+
+      });
+      </script>
+      <p id="button22" class="btn btn-default" disabled="disabled">22</p><script> document.getElementById('button22').setAttribute("disabled", "disabled");</script><p id="button23" class="btn btn-default" disabled="disabled">23</p><script> document.getElementById('button23').setAttribute("disabled", "disabled");</script><p id="button24" class="btn btn-default" disabled="disabled">24</p><script> document.getElementById('button24').setAttribute("disabled", "disabled");</script><p id="button25" class="btn btn-default" disabled="disabled">25</p><script> document.getElementById('button25').setAttribute("disabled", "disabled");
+            </script>
+            <p id="button26" class="btn btn-default" disabled="disabled">26</p><script> document.getElementById('button26').setAttribute("disabled", "disabled");
+            </script>
+            <p id="button27" class="btn btn-default" disabled="disabled">27</p><script> document.getElementById('button27').setAttribute("disabled", "disabled");
+            </script>
+            <p id="button28" class="btn btn-default" disabled="disabled">28</p><script> document.getElementById('button28').setAttribute("disabled", "disabled");
+            </script>
+            <p id="button29" class="btn btn-default" disabled="disabled">29</p><script> document.getElementById('button29').setAttribute("disabled", "disabled");
+            </script>
+            
+    </div>
+    <br><div class="btn-group btn-group-justified"><p id="button30" class="btn btn-default" disabled="disabled">30</p><script> document.getElementById('button30').setAttribute("disabled", "disabled");
+            </script>
+            <p id="button31" class="btn btn-default" disabled="disabled">31</p><script> document.getElementById('button31').setAttribute("disabled", "disabled");
+            </script>
+            <p id="button32" class="btn btn-default" disabled="disabled">32</p><script> document.getElementById('button32').setAttribute("disabled", "disabled");
+            </script>
+            <p id="button33" class="btn btn-default" disabled="disabled">33</p><script> document.getElementById('button33').setAttribute("disabled", "disabled");
+            </script>
+            <p id="button34" class="btn btn-default" disabled="disabled">34</p><script> document.getElementById('button34').setAttribute("disabled", "disabled");
+            </script>
+            <p id="button35" class="btn btn-default" disabled="disabled">35</p><script> document.getElementById('button35').setAttribute("disabled", "disabled");
+            </script>
+            <p id="button36" class="btn btn-default" disabled="disabled">36</p><script> document.getElementById('button36').setAttribute("disabled", "disabled");
+            </script>
+            <p id="button37" class="btn btn-default" disabled="disabled">37</p><script> document.getElementById('button37').setAttribute("disabled", "disabled");
+            </script>
+            <p id="button38" class="btn btn-default" disabled="disabled">38</p><script> document.getElementById('button38').setAttribute("disabled", "disabled");
+            </script>
+            <p id="button39" class="btn btn-default" disabled="disabled">39</p><script> document.getElementById('button39').setAttribute("disabled", "disabled");
+            </script>
+            <p id="button40" class="btn btn-default" disabled="disabled">40</p><script> document.getElementById('button40').setAttribute("disabled", "disabled");
+            </script>
+            </div><div id="form19" class="row" style="display:none">
+      <div class="col-xs-4">
+
+      <label>19</label>
+      </div>
+      <div class="col-xs-8">
+      <input id="input19" type="number" class="form-control" name="19">
+      </div>
+      </div>
+      <div id="form20" class="row" style="display:none">
+      <div class="col-xs-4">
+
+      <label>20</label>
+      </div>
+      <div class="col-xs-8">
+      <input id="input20" type="number" class="form-control" name="20">
+      </div>
+      </div>
+      <div id="form21" class="row" style="display:none">
+      <div class="col-xs-4">
+
+      <label>21</label>
+      </div>
+      <div class="col-xs-8">
+      <input id="input21" type="number" class="form-control" name="21">
+      </div>
+      </div>
+      <div id="form22" class="row" style="display:none">
+      <div class="col-xs-4">
+
+      <label>22</label>
+      </div>
+      <div class="col-xs-8">
+      <input id="input22" type="number" class="form-control" name="22">
+      </div>
+      </div>
+      <div id="form23" class="row" style="display:none">
+      <div class="col-xs-4">
+
+      <label>23</label>
+      </div>
+      <div class="col-xs-8">
+      <input id="input23" type="number" class="form-control" name="23">
+      </div>
+      </div>
+      <div id="form24" class="row" style="display:none">
+      <div class="col-xs-4">
+
+      <label>24</label>
+      </div>
+      <div class="col-xs-8">
+      <input id="input24" type="number" class="form-control" name="24">
+      </div>
+      </div>
+      <div id="form25" class="row" style="display:none">
+      <div class="col-xs-4">
+
+      <label>25</label>
+      </div>
+      <div class="col-xs-8">
+      <input id="input25" type="number" class="form-control" name="25">
+      </div>
+      </div>
+      <div id="form26" class="row" style="display:none">
+      <div class="col-xs-4">
+
+      <label>26</label>
+      </div>
+      <div class="col-xs-8">
+      <input id="input26" type="number" class="form-control" name="26">
+      </div>
+      </div>
+      <div id="form27" class="row" style="display:none">
+      <div class="col-xs-4">
+
+      <label>27</label>
+      </div>
+      <div class="col-xs-8">
+      <input id="input27" type="number" class="form-control" name="27">
+      </div>
+      </div>
+      <div id="form28" class="row" style="display:none">
+      <div class="col-xs-4">
+
+      <label>28</label>
+      </div>
+      <div class="col-xs-8">
+      <input id="input28" type="number" class="form-control" name="28">
+      </div>
+      </div>
+      <div id="form29" class="row" style="display:none">
+      <div class="col-xs-4">
+
+      <label>29</label>
+      </div>
+      <div class="col-xs-8">
+      <input id="input29" type="number" class="form-control" name="29">
+      </div>
+      </div>
+      <div id="form30" class="row" style="display:none">
+      <div class="col-xs-4">
+
+      <label>30</label>
+      </div>
+      <div class="col-xs-8">
+      <input id="input30" type="number" class="form-control" name="30">
+      </div>
+      </div>
+      <div id="form31" class="row" style="display:none">
+      <div class="col-xs-4">
+
+      <label>31</label>
+      </div>
+      <div class="col-xs-8">
+      <input id="input31" type="number" class="form-control" name="31">
+      </div>
+      </div>
+      <div id="form32" class="row" style="display:none">
+      <div class="col-xs-4">
+
+      <label>32</label>
+      </div>
+      <div class="col-xs-8">
+      <input id="input32" type="number" class="form-control" name="32">
+      </div>
+      </div>
+      <div id="form33" class="row" style="display:none">
+      <div class="col-xs-4">
+
+      <label>33</label>
+      </div>
+      <div class="col-xs-8">
+      <input id="input33" type="number" class="form-control" name="33">
+      </div>
+      </div>
+      <div id="form34" class="row" style="display:none">
+      <div class="col-xs-4">
+
+      <label>34</label>
+      </div>
+      <div class="col-xs-8">
+      <input id="input34" type="number" class="form-control" name="34">
+      </div>
+      </div>
+      <div id="form35" class="row" style="display:none">
+      <div class="col-xs-4">
+
+      <label>35</label>
+      </div>
+      <div class="col-xs-8">
+      <input id="input35" type="number" class="form-control" name="35">
+      </div>
+      </div>
+      <div id="form36" class="row" style="display:none">
+      <div class="col-xs-4">
+
+      <label>36</label>
+      </div>
+      <div class="col-xs-8">
+      <input id="input36" type="number" class="form-control" name="36">
+      </div>
+      </div>
+      <div id="form37" class="row" style="display:none">
+      <div class="col-xs-4">
+
+      <label>37</label>
+      </div>
+      <div class="col-xs-8">
+      <input id="input37" type="number" class="form-control" name="37">
+      </div>
+      </div>
+      <div id="form38" class="row" style="display:none">
+      <div class="col-xs-4">
+
+      <label>38</label>
+      </div>
+      <div class="col-xs-8">
+      <input id="input38" type="number" class="form-control" name="38">
+      </div>
+      </div>
+      <div id="form39" class="row" style="display:none">
+      <div class="col-xs-4">
+
+      <label>39</label>
+      </div>
+      <div class="col-xs-8">
+      <input id="input39" type="number" class="form-control" name="39">
+      </div>
+      </div>
+      <div id="form40" class="row" style="display:none">
+      <div class="col-xs-4">
+
+      <label>40</label>
+      </div>
+      <div class="col-xs-8">
+      <input id="input40" type="number" class="form-control" name="40">
+      </div>
+      </div>
+      <div id="customer_info">
+        <label>Cash</label>
+        <input class="form-control" type="number" name="cash" id="cash">
+        <label>Card</label>
+        <input class="form-control" type="number" name="card" id="card">
+        <label>Debt</label>
+        <input class="form-control" type="number" name="debt" id="debt">
+        <label>Customer name</label>
+        <input class="form-control" type="text" name="customer" id="customer">
+        <label>Memo</label>
+        <textarea class="form-control" rows="5" name="memo" id="memo"></textarea>
+    </div><input type="hidden" value="5ae2dada0f23f" name="source"> <input type="hidden" name="shop" value="5ae2dada0f23f">
+<input type="hidden" value="5ae564978ffa0" name="item">
+<input type="submit" class="btn btn-primary" value="Send" name="send">
+</form>
+</div>   
+<div class = "footer">
+    <p>&copy;copyrightA&K</p>
+</div>      
+</body></html>

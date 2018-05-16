@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<!-- saved from url=(0057)http://localhost/web/shopms/profile/company/5ae05e509c8f6 -->
+<html lang="ru">
+<head>
+    <title>О компании</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="styles.css">    
+    <link rel="stylesheet" href="./company_files/bootstrap.min.css">    
+    <script src="./company_files/jquery.min.js.Без названия"></script>
+    <script src="./company_files/bootstrap.min.js.Без названия"></script>
+ 
+<script type="text/javascript">
+    // When the user scrolls the page, execute myFunction
+    window.onscroll = function() {myFunction()};
+
+    // Get the header
+    var header = document.getElementById("myHeader");
+
+    // Get the offset position of the navbar
+    var sticky = header.offsetTop;
+
+    // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+    function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        header.classList.add("sticky");
+      } else {
+        header.classList.remove("sticky");
+      }
+    } 
+</script>    
+</head>
+<body>
+<div class="header center" id = "myHeader">
+    <a class = "head-item" href="http://localhost/web/shopms" class="btn btn-primary">Main</a>
+    <a class = "head-item" href="http://localhost/web/shopms/login" class="btn btn-primary">Login</a>
+    <a class = "head-item" href="http://localhost/web/shopms/profile/user/5adee39f1e751" class="btn btn-primary">My profile</a>
+    <a class = "head-item" href="http://localhost/web/shopms/profile/company/5ae05e509c8f6" class="btn btn-primary">My company</a> 
+    <a class = "head-item" href="http://localhost/web/shopms/company/create_item" class="btn btn-primary">Create item</a>
+</div>	
+    
+<div class = "content center">
+    <h4 class = "cursive">Приветствуем, (Продавец 1)</h4>   
+    <h1>Компания Склад №1</h1>
+    <p>Менеджер: Тетя</p>
+    <p>Номер телефона: +7 705 1234567</p>
+    <p>Адрес: г.Алматы, пример улицы, 95</p>
+</div>
+
+
+<div class = "content center">
+
+    <table align = "center" class="table table-stripped">
+        <thead>
+            <tr>
+                <th class = "tab">Название</th>
+                <th class = "tab">Адрес</th>
+                <th class = "tab">Телефон 1</th>
+                <th class = "tab">Телефон 2</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td class = "tab">Магазин 1</td>
+            <td class = "tab">ул. Примерная, 56б</td>
+            <td class = "tab">+7 701 1656898</td>
+            <td class = "tab">+7 701 1656895</td>
+            <td><a  class="btn btn-primary link" href="http://localhost/web/shopms/profile/shop/5ae2dada0f23f">Подробнее</a></td>
+        </tr>
+        <tr>
+            <td class = "tab">Магазин 2</td>
+            <td class = "tab">ул. Примерная, 76</td>
+            <td class = "tab">+7 701 1656898</td>
+            <td class = "tab">+7 701 1656895</td>
+            <td><a class="link" href="http://localhost/web/shopms/profile/shop/5ae2dadfd6a75">Подробнее</a></td>
+        </tr>    
+        <tr>
+            <td class = "tab">Cклад 1</td>
+            <td class = "tab">ул. Примерная, 76</td>
+            <td class = "tab">+7 701 1656898</td>
+            <td class = "tab">+7 701 1656895</td>
+            <td><a class="link" href="http://localhost/web/shopms/profile/shop/5ae2dadfd6a75">Подробнее</a></td>
+        </tr> 
+        <tr>
+            <td class = "tab">Склад 2</td>
+            <td class = "tab">ул. Примерная, 76</td>
+            <td class = "tab">+7 701 1656898</td>
+            <td class = "tab">+7 701 1656895</td>
+            <td><a class="link" href="http://localhost/web/shopms/profile/shop/5ae2dadfd6a75">Подробнее</a></td>
+        </tr>        
+        </tbody>
+    </table>
+    <br>
+    <a class="button-rose link" href="http://localhost/web/shopms/company/create_shop/">Создать магазин</a>
+    <a class="link" href="http://localhost/web/shopms/profile/items/5ae05e509c8f6">Список товаров</a>    
+</div>    
+<div class = "footer">
+    <p>&copy;copyrightA&K</p>
+</div>    
+</body>
+</html>
