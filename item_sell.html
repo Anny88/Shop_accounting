@@ -27,17 +27,13 @@
     </div>
 </div>	
     
- <div class = "content center">
+<div class = "content center">
     
-    <h3>Item Gucci g 1001 from shop 1 </h3>
-    <p>Season winter &nbsp; &nbsp;&nbsp; Price low 100 &nbsp;&nbsp;&nbsp; Price high 200</p>
-</div>   
-    
-
- <div class = "content center">
-
-<form method="post" onsubmit="return confirm(&#39;Are you sure you wish to send items?&#39;)">
-    <label>Action</label>
+<h3 class = "rosa">Item Gucci g 1001 from shop 1 </h3>
+<p>Season winter &nbsp; &nbsp;&nbsp; Price low 100 &nbsp;&nbsp;&nbsp; Price high 200</p>
+<br>
+<form method="post" class = "form-inline" onsubmit="return confirm(&#39;Are you sure you wish to send items?&#39;)">
+    <label>Action &nbsp;&nbsp;</label>
     
     <script>
     var max_opened = 0;
@@ -57,7 +53,13 @@
     }
     </script>
     
-    <select class="form-control" onchange="chose_destination()" name="destination" id="destination"><option value="sell">Sell</option><option value="outside">Drop</option><option value="5ae2dadfd6a75">Send to a</option></select><div class="btn-group btn-group-justified"><p id="button19" class="btn btn-default">19</p><script>
+    <select class="form-control" onchange="chose_destination()" name="destination" id="destination">
+        <option value="sell">Sell</option>
+        <option value="outside">Drop</option>
+        <option value="5ae2dadfd6a75">Send to a</option>
+    </select>
+    <br> <br>
+    <div class="btn-group btn-group-justified"><p id="button19" class="btn btn-default">19</p><script>
       var x19 = 0;
       var max19 = 8;
       $(document).ready(function(){
@@ -386,19 +388,23 @@
       </div>
       </div>
       <div id="customer_info">
-        <label>Cash</label>
+        <br><br>
+        <label>Cash &nbsp;&nbsp;</label>
         <input class="form-control" type="number" name="cash" id="cash">
-        <label>Card</label>
+        <label>Card &nbsp;&nbsp;</label>
         <input class="form-control" type="number" name="card" id="card">
-        <label>Debt</label>
+        <label>Debt &nbsp;&nbsp;</label>
         <input class="form-control" type="number" name="debt" id="debt">
-        <label>Customer name</label>
+        <label>Customer name &nbsp;&nbsp;</label>
         <input class="form-control" type="text" name="customer" id="customer">
-        <label>Memo</label>
-        <textarea class="form-control" rows="5" name="memo" id="memo"></textarea>
-    </div><input type="hidden" value="5ae2dada0f23f" name="source"> <input type="hidden" name="shop" value="5ae2dada0f23f">
+        <br><br>
+        <label>Примечание &nbsp;&nbsp;</label>
+        <textarea class="form-control" rows="2" style="width:50%;" name="memo" id="memo"></textarea>
+        <br><br>  
+      </div>
+    <input type="hidden" value="5ae2dada0f23f" name="source"> <input type="hidden" name="shop" value="5ae2dada0f23f">
 <input type="hidden" value="5ae564978ffa0" name="item">
-<input type="submit" class="btn btn-primary button-rose" value="Send" name="send">
+<input type="submit" class="btn btn-danger" value="Send" name="send">
 </form>
 </div>   
 <div class = "footer stickyfoot">
