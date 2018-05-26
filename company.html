@@ -5,10 +5,10 @@
     <title>О компании</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">    
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="styles.css">    
-    <link rel="stylesheet" href="./company_files/bootstrap.min.css">   
+    <link rel="stylesheet" type="text/css" href="styles.css"> 
     <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
     
+    <link rel="stylesheet" href="./company_files/bootstrap.min.css">   
     <script src="./company_files/jquery.min.js.Без названия"></script>
     <script src="./company_files/bootstrap.min.js.Без названия"></script>
  
@@ -33,17 +33,25 @@
 </script>    
 </head>
 <body>
-<div class="header center">
-    <a class = "head-item" href="http://localhost/web/shopms">Main</a>
-    <a class = "head-item" href="http://localhost/web/shopms/login">Login</a>
-    <a class = "head-item" href="http://localhost/web/shopms/profile/user/5adee39f1e751">My profile</a>
-    <a class = "head-item" href="http://localhost/web/shopms/profile/company/5ae05e509c8f6">My company</a> 
-    <a class = "head-item" href="http://localhost/web/shopms/company/create_item">Create item</a>
-</div>	
+<div class="header">
+    <div class = "row"> 
+    <div class = "col-lg-3 center">   
+        <span align = "left" class = "link" style="color:#ba000d;"><i>Loginname, Company 1</i></span>
+    </div>
+    <div class = "col-lg-9 col-lg-offset-0">
+    <a class="head-item" href="http://localhost/web/shopms" >Main</a>
+    <a href="http://localhost/web/shopms/login" class="head-item">Login</a>
+    <a href="http://localhost/web/shopms/profile/user/5adee39f1e751" class="head-item">My profile</a>
+    <a href="http://localhost/web/shopms/profile/company/5ae05e509c8f6" class="head-item">My company</a>
+    <a href="http://localhost/web/shopms/company/create_item" class="head-item">Create item</a> 
+    <a href="http://localhost/web/shopms/company/create_item" class="link">Log out</a> 
+    </div>
+    </div>
+</div>		
     
 <div class = "content center">
     <h4 class = "cursive">Приветствуем, (Продавец 1)</h4>   
-    <h1>Компания Склад №1</h1>
+    <h2>Компания Склад №1</h2>
     <p>Менеджер: Тетя</p>
     <p>Номер телефона: +7 705 1234567</p>
     <p>Адрес: г.Алматы, пример улицы, 95</p>
@@ -52,53 +60,53 @@
 
 <div class = "row content center">
     <div class="col-lg-8 col-lg-offset-2">
-    <table  class="table table-stripped tab center">
-        <thead  align = "center">
+    <table  class="table table-hover table-striped center">
+        <thead>
             <tr>
-                <th class = " text-center">Название</th>
-                <th class = " text-center">Адрес</th>
-                <th class = "text-center">Телефон 1</th>
-                <th class = "text-center">Телефон 2</th>
+                <th class = "text-center">Название</th>
+                <th class = "text-center">Адрес</th>
+                <th class = "text-center">Продавцы</th>
+                <th class = "text-center">Телефон</th>
                 <th></th>
             </tr>
         </thead>
         <tbody>
         <tr>
-            <td class = "tab">Магазин 1</td>
-            <td class = "tab">ул. Примерная, 56б</td>
-            <td class = "tab">+7 701 1656898</td>
-            <td class = "tab">+7 701 1656895</td>
+            <td>Магазин 1</td>
+            <td>ул. Примерная, 56б</td>
+            <td><a href="#">Иванов</a>, <a href="#">Петров</a></td>
+            <td>+7 701 1656895</td>
             <td><a  class="link" href="http://localhost/web/shopms/profile/shop/5ae2dada0f23f">Подробнее</a></td>
         </tr>
         <tr>
-            <td class = "tab">Магазин 2</td>
-            <td class = "tab">ул. Примерная, 76</td>
-            <td class = "tab">+7 701 1656898</td>
-            <td class = "tab">+7 701 1656895</td>
+            <td>Магазин 2</td>
+            <td>ул. Примерная, 76</td>
+            <td><a href="#">Сидоров</a>, <a href="#">Петров</a></td>
+            <td>+7 701 1656895</td>
             <td><a class="link" href="http://localhost/web/shopms/profile/shop/5ae2dadfd6a75">Подробнее</a></td>
         </tr>    
         <tr>
-            <td class = "tab">Cклад 1</td>
-            <td class = "tab">ул. Примерная, 76</td>
-            <td class = "tab">+7 701 1656898</td>
-            <td class = "tab">+7 701 1656895</td>
+            <td>Cклад 1</td>
+            <td>ул. Примерная, 76</td>
+            <td><a href="#">Петров</a></td>
+            <td>+7 701 1656895</td>
             <td><a class="link" href="http://localhost/web/shopms/profile/shop/5ae2dadfd6a75">Подробнее</a></td>
         </tr> 
         <tr>
-            <td class = "tab">Склад 2</td>
-            <td class = "tab">ул. Примерная, 76</td>
-            <td class = "tab">+7 701 1656898</td>
-            <td class = "tab">+7 701 1656895</td>
+            <td>Склад 2</td>
+            <td>ул. Примерная, 76</td>
+            <td><a href="#">Петров</a> <a href="#">Сидоров</a> <a href="#">Иванов</a> </td>
+            <td>+7 701 1656895</td>
             <td><a class="link" href="http://localhost/web/shopms/profile/shop/5ae2dadfd6a75">Подробнее</a></td>
         </tr>        
         </tbody>
     </table>
     <br>
-    <a class="btn btn-danger" href="http://localhost/web/shopms/company/create_shop/">Создать магазин </a>
+    <a class="btn btn-default" href="http://localhost/web/shopms/company/create_shop/">Создать магазин </a>
     <a class="btn btn-default" href="http://localhost/web/shopms/profile/items/5ae05e509c8f6"> Список товаров</a>    
     </div>
 </div>
-<div class = "footer">
+<div class = "footer stickyfoot">
     <p>&copy;copyrightA&K</p>
 </div>    
 </body>

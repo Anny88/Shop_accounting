@@ -2,38 +2,86 @@
 <!-- saved from url=(0054)http://localhost/web/shopms/profile/shop/5ae2dada0f23f -->
 <html lang="ru"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	
-	<title>Главная</title>
+	<title>Магазин</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="./shop_files/bootstrap.min.css">
-  <script src="./shop_files/jquery.min.js.Без названия"></script>
-  <script src="./shop_files/bootstrap.min.js.Без названия"></script>
-  <link rel="stylesheet" type="text/css" href="./shop_files/styles.css">
+    <link rel="stylesheet" href="./shop_files/bootstrap.min.css">
+    <script src="./shop_files/jquery.min.js.Без названия"></script>
+    <script src="./shop_files/bootstrap.min.js.Без названия"></script>
+    <link rel="stylesheet" type="text/css" href="./shop_files/styles.css">
+    <link rel="stylesheet" type="text/css" href="styles.css"> 
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">   
 </head>
 <body>
-    <div class="header">
-<a href="http://localhost/web/shopms" class="btn btn-primary">Main</a>
-<a href="http://localhost/web/shopms/login" class="btn btn-primary">Login</a>
-<a href="http://localhost/web/shopms/profile/user/5adee39f1e751" class="btn btn-primary">My profile</a><a href="http://localhost/web/shopms/profile/company/5ae05e509c8f6" class="btn btn-primary">My company</a><a href="http://localhost/web/shopms/company/create_item" class="btn btn-primary">Create item</a><p>Welcome,  (1)</p>    
+    
+<div class="header">
+    <div class = "row"> 
+    <div class = "col-lg-3 center">   
+        <span align = "left" class = "link" style="color:#ba000d;"><i>Loginname, Company 1</i></span>
+    </div>
+    <div class = "col-lg-9 col-lg-offset-0">
+    <a class="head-item" href="http://localhost/web/shopms" >Main</a>
+    <a href="http://localhost/web/shopms/login" class="head-item">Login</a>
+    <a href="http://localhost/web/shopms/profile/user/5adee39f1e751" class="head-item">My profile</a>
+    <a href="http://localhost/web/shopms/profile/company/5ae05e509c8f6" class="head-item">My company</a>
+    <a href="http://localhost/web/shopms/company/create_item" class="head-item">Create item</a> 
+    <a href="http://localhost/web/shopms/company/create_item" class="link">Log out</a> 
+    </div>
+    </div>
 </div>	
-    <h1>Shop shop 1</h1>
-<h2>Cash 600</h2>
-<h2>Card 200</h2>
-<h2>Debt 0</h2>
-<p>Address add</p>
-<p>Phone 1 1</p>
-<p>Phone 2 2</p>
 
-
-
-<table class="table table-stripped">
+<div class = "row"> 
+<div class = "center col-lg-8 col-lg-offset-2">     
+    <h3 class="rosa center">Shop: Магазин 1</h3>
+    <h3 class="center">Оборот за период:</h3><br>
+    <form method="post" class="form-inline" >
+        <label>C &nbsp;&nbsp;</label><input type="date" size= "10" class="form-control" name="date1">
+        <label>По &nbsp;&nbsp;</label><input type="date"  class="form-control" name="date2"> 
+        <label>&nbsp;&nbsp;</label>
+        <input type="submit" class="btn btn-danger" value="Рассчитать">
+    </form>
+    <br>
+    <table class="table table-striped table-hover">
     <thead>
         <tr>
-            <th>Name</th>
-            <th>Price</th>
-            <th>Season</th>
-            <th>Size</th>
-            <th>Amount</th>
-            <th>Action</th>
+            <th class = "text-center">Наличными</th>
+            <th class = "text-center">Кредитной картой</th>
+            <th class = "text-center">В долг</th>
+            <th class = "text-center">Итого</th>
+        </tr>
+    </thead>
+    <tbody>
+         <tr>
+            <th class = "text-center">600 000</th>
+            <th class = "text-center">200 000</th>
+            <th class = "text-center">50 000</th>
+            <th class = "text-center">850 000</th>
+        </tr>
+    </tbody>
+    </table> 
+    <br>
+    </div>
+</div>
+
+<hr>
+<div class = "row"> 
+<div class = "center col-lg-10 col-lg-offset-1">  
+    <br>
+    <form method="post" class="form-inline" >
+        <label style = "font-size:2rem;">Остаток товара в <b>Магазин 1</b> на дату: &nbsp; &nbsp;</label> 
+        <input type="date" size= "10" class="form-control" name="dateitems"> 
+        <label>&nbsp;&nbsp;</label>
+        <input type="submit" class="btn btn-danger" value="Смотреть">
+    </form>
+    <br>
+    <table class="table table-bordered table-hover">
+    <thead>
+        <tr>
+            <th class = "text-center">Name</th>
+            <th class = "text-center">Price</th>
+            <th class = "text-center">Season</th>
+            <th class = "text-center">Size</th>
+            <th class = "text-center">Amount</th>
+            <th class = "text-center">Action</th>
         </tr>
     </thead>
     <tbody>
@@ -77,6 +125,11 @@
         </form></td>
         
     </tr>    </tbody>
-</table>    
-    
+    </table>    
+    <br>
+</div>
+</div>
+<div class = "footer stickyfoot">
+    <p>&copy;copyrightA&K</p>
+</div>        
 </body></html>

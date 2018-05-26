@@ -1,30 +1,44 @@
-.sticky {
+body{
+    background-color: #fffffc;
+}
+
+.stickyhead {
   position: fixed;
   top: 0;
   width: 100%
+      
 }
-.sticky + .content {
-  padding-top: 102px;
+.stickyfoot {
+  position: fixed;
+  bottom: 0;
+  width: 100%
+  
 }
+
 .header{  
     border-bottom: 2px solid #e53935;
-    padding-bottom: 1rem;
-    padding-top: 1rem;
-    
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+    background-color: #fff;
+    margin-bottom: 2rem;
+    margin-top: none;
 }
 
 
 .head-item{
+    font-size: 2rem;
     color: #1b0000;
     margin-right: 2rem;
-    padding: 0.5rem;
+    padding: 1rem;
     text-decoration: none;	
 }
 
 .head-item:hover {
     background-color: #1b0000;
     color: white;
+    text-decoration: none;
 }
+
 
 .cursive{
     font-style: italic;
@@ -38,38 +52,67 @@
 .content{
     color: #1b0000;
     margin: 2rem;
+   
 }
 .tab{
     border: 1px solid  #e53935;
     padding: 0.3rem;
 }
 .link{
-    color: #1b0000;
+    color: #e53935;
     padding: 0.5rem;
+    font-size: 2rem;
 }
 .link:hover{
-    color: #e53935;    
+    color:#ba000d;    
 }
-.button-rose{
+.button-brown{
     border: 1px solid #1b0000;
     text-decoration: none;
+    color: white;
 }
-.button-rose:hover{
+.button-brown:hover{
     background:#1b0000;
     color: white;
 }
 
+.forjumb{
+    margin-top: 3rem;
+    background-color:antiquewhite;
+}
+.pale{
+    background-color:white;
+}
+.button-rose{
+    background-color:#e53935;
+    color: white;
+    border: 1px solid #ba000d;
+    padding: 0.5rem;
+    text-decoration: none;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.button-rose:hover{
+    background:#ba000d;
+    border: 1px solid #e53935;
+   
+}
+
+label{
+    padding-left: 1rem;
+}
 
 .footer{
-    background-color: #e53935;
+    background-color: antiquewhite;
     text-align: right;
-    padding: 5px;
+    margin-top: 2rem;
     
     margin-bottom: none;
     
 }
 .footer p{
-    color: #1b0000;
+    color: #e53935;
     font-style: italic;
     font-size: 15px;
     margin-bottom: 3px;
