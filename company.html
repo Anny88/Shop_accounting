@@ -6,7 +6,9 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">    
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="styles.css">    
-    <link rel="stylesheet" href="./company_files/bootstrap.min.css">    
+    <link rel="stylesheet" href="./company_files/bootstrap.min.css">   
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    
     <script src="./company_files/jquery.min.js.Без названия"></script>
     <script src="./company_files/bootstrap.min.js.Без названия"></script>
  
@@ -31,12 +33,12 @@
 </script>    
 </head>
 <body>
-<div class="header center" id = "myHeader">
-    <a class = "head-item" href="http://localhost/web/shopms" class="btn btn-primary">Main</a>
-    <a class = "head-item" href="http://localhost/web/shopms/login" class="btn btn-primary">Login</a>
-    <a class = "head-item" href="http://localhost/web/shopms/profile/user/5adee39f1e751" class="btn btn-primary">My profile</a>
-    <a class = "head-item" href="http://localhost/web/shopms/profile/company/5ae05e509c8f6" class="btn btn-primary">My company</a> 
-    <a class = "head-item" href="http://localhost/web/shopms/company/create_item" class="btn btn-primary">Create item</a>
+<div class="header center">
+    <a class = "head-item" href="http://localhost/web/shopms">Main</a>
+    <a class = "head-item" href="http://localhost/web/shopms/login">Login</a>
+    <a class = "head-item" href="http://localhost/web/shopms/profile/user/5adee39f1e751">My profile</a>
+    <a class = "head-item" href="http://localhost/web/shopms/profile/company/5ae05e509c8f6">My company</a> 
+    <a class = "head-item" href="http://localhost/web/shopms/company/create_item">Create item</a>
 </div>	
     
 <div class = "content center">
@@ -48,15 +50,15 @@
 </div>
 
 
-<div class = "content center">
-
-    <table align = "center" class="table table-stripped">
-        <thead>
+<div class = "row content center">
+    <div class="col-lg-8 col-lg-offset-2">
+    <table  class="table table-stripped tab center">
+        <thead  align = "center">
             <tr>
-                <th class = "tab">Название</th>
-                <th class = "tab">Адрес</th>
-                <th class = "tab">Телефон 1</th>
-                <th class = "tab">Телефон 2</th>
+                <th class = " text-center">Название</th>
+                <th class = " text-center">Адрес</th>
+                <th class = "text-center">Телефон 1</th>
+                <th class = "text-center">Телефон 2</th>
                 <th></th>
             </tr>
         </thead>
@@ -66,7 +68,7 @@
             <td class = "tab">ул. Примерная, 56б</td>
             <td class = "tab">+7 701 1656898</td>
             <td class = "tab">+7 701 1656895</td>
-            <td><a  class="btn btn-primary link" href="http://localhost/web/shopms/profile/shop/5ae2dada0f23f">Подробнее</a></td>
+            <td><a  class="link" href="http://localhost/web/shopms/profile/shop/5ae2dada0f23f">Подробнее</a></td>
         </tr>
         <tr>
             <td class = "tab">Магазин 2</td>
@@ -92,9 +94,10 @@
         </tbody>
     </table>
     <br>
-    <a class="button-rose link" href="http://localhost/web/shopms/company/create_shop/">Создать магазин</a>
-    <a class="link" href="http://localhost/web/shopms/profile/items/5ae05e509c8f6">Список товаров</a>    
-</div>    
+    <a class="btn btn-danger" href="http://localhost/web/shopms/company/create_shop/">Создать магазин </a>
+    <a class="btn btn-default" href="http://localhost/web/shopms/profile/items/5ae05e509c8f6"> Список товаров</a>    
+    </div>
+</div>
 <div class = "footer">
     <p>&copy;copyrightA&K</p>
 </div>    
